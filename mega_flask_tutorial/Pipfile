@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+verify_ssl = true
+url = "https://pypi.org/simple"
+
+[dev-packages]
+
+[requires]
+python_version = "3.5"
+
+[packages]
+matplotlib = "==2.1.2"
+numpy = "==1.14.0"
+psutil = "==5.4.3"
+pyparsing = "==2.2.0"
+python-dateutil = "==2.6.1"
+pytz = "==2017.3"
+six = "==1.11.0"
+Cycler = "==0.10.0"
+flask = "*"
+flask-wtf = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+flask-login = "*"

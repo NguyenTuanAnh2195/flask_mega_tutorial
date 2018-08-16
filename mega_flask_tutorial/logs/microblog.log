@@ -1,0 +1,69 @@
+2018-06-12 10:40:03,125 $(levelname)s: Microblog startup [in /home/tuan-anh/mega_flask_tutorial/app/__init__.py:44]
+2018-06-12 10:40:53,989 $(levelname)s: Microblog startup [in /home/tuan-anh/mega_flask_tutorial/app/__init__.py:44]
+2018-06-12 10:41:06,110 $(levelname)s: Exception on /edit_profile [POST] [in /home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/tuan-anh/mega_flask_tutorial/app/routes.py", line 90, in edit_profile
+    if form.validate_on_submit():
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/wtforms/form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/wtforms/form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/wtforms/fields/core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/wtforms/fields/core.py", line 224, in _run_validation_chain
+    validator(form, self)
+  File "/home/tuan-anh/mega_flask_tutorial/app/forms.py", line 43, in validate_username
+    if username.data != self.original_usernae:
+AttributeError: 'EditProfileForm' object has no attribute 'original_usernae'
+2018-06-12 10:41:36,706 $(levelname)s: Exception on /edit_profile [POST] [in /home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/tuan-anh/mega_flask_tutorial/app/routes.py", line 90, in edit_profile
+    if form.validate_on_submit():
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/flask_wtf/form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/wtforms/form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/wtforms/form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/wtforms/fields/core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/home/tuan-anh/.local/share/virtualenvs/mega_flask_tutorial-1ACGeTw2/lib/python3.5/site-packages/wtforms/fields/core.py", line 224, in _run_validation_chain
+    validator(form, self)
+  File "/home/tuan-anh/mega_flask_tutorial/app/forms.py", line 43, in validate_username
+    if username.data != self.original_usernae:
+AttributeError: 'EditProfileForm' object has no attribute 'original_usernae'
+2018-06-12 10:42:06,077 $(levelname)s: Microblog startup [in /home/tuan-anh/mega_flask_tutorial/app/__init__.py:44]
+2018-07-08 10:29:03,581 $(levelname)s: Microblog startup [in /home/tuan-anh/mega_flask_tutorial/app/__init__.py:44]
+2018-08-16 22:31:05,729 $(levelname)s: Microblog startup [in /home/tuan-anh/mega_flask_tutorial/app/__init__.py:44]
+2018-08-16 22:32:20,063 $(levelname)s: Microblog startup [in /home/tuan-anh/mega_flask_tutorial/app/__init__.py:44]
+2018-08-16 22:32:25,765 $(levelname)s: Microblog startup [in /home/tuan-anh/mega_flask_tutorial/app/__init__.py:44]
